@@ -1,0 +1,54 @@
+.navbar{
+    padding: 1rem 9rem;
+    margin: 0;
+    background-color: $color-darkBrown;
+    @media screen and (max-width: 1200px) {
+        padding: 1.5rem 4rem;
+    }
+    @media screen and (max-width: 992px) {
+        padding: 1.5rem 2rem;
+    }
+    @media screen and (max-width: 440px) {
+        padding: 1rem 1rem;
+    }
+    &_fixed-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 35%;
+    @media screen and (max-width: 1200px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+    &_link{
+        color: $color-lightGold;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.125rem;
+        letter-spacing: 0.1rem;
+        @media screen and (max-width: 440px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+

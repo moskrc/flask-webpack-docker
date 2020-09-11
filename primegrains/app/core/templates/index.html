@@ -1,0 +1,306 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="header">
+    <div class="wrapper">
+        <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_column header__wrapper">
+            <h1 class="header__title">
+                Пробоотборник для контроля качества зерна
+            </h1>
+            <p class="header__subtitle">
+                Любые размеры под заказ
+            </p>
+            <a href="#order" class="btn header__btn">заказать</a>
+        </div>
+    </div>
+</header>
+<section id="about" class="section about">
+    <div class="wrapper">
+        <div class="about__wrapper">
+            <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_column wrapper_col-3">
+                <h2 class="section__title about__title">
+                    Что мы производим
+                </h2>
+                <h3 class="section__subtitle about__subtitle">
+                    Изготавливаем качественный инструмент для отбора проб зерна
+                </h3>
+                <p class="section__text about__text">
+                    Пробоотборники просты в использовании и обслуживании. Имеют малый вес и прочную конструкцию.
+                    Являются универсальным и недорогим средством отбора проб зерна.
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_row margin_top">
+                <img src="{{ url_for('static', filename='images/about.png') }}" alt="products"
+                     class="section__img margin_top">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_row margin_top">
+                <div class="wrapper_column wrapper_col-3">
+                    <span class="list__title">Устройство прибора</span>
+                    <ol>
+                        <li>
+                            <p class="section__text list__item">
+                                Наружный корпус
+                            </p>
+                            <div class="wrapper__column list__text">
+                                <div class="section__subtext ">- алюминиевая труба диаметром 35 мм</div>
+                                <div class="section__subtext">- наконечник конусообразной формы и упор</div>
+                                <div class="section__subtext">- ручки (по требованию заказчика)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="section__text list__item list__item_bold">
+                                Внутренний корпус
+                            </p>
+                            <div class="wrapper__column list__text">
+                                <div class="section__subtext">- алюминиевая труба диаметром 26 мм</div>
+                                <div class="section__subtext">- обжимное кольцо</div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="wrapper_column wrapper_col-3">
+                    <span class="list__title">Порядок работы</span>
+                    <ol>
+                        <li>
+                            <p class="section__text list__item">
+                                Погрузить пробоотборник с закрытыми заборными отверстиями в насыпь
+                            </p>
+                        </li>
+                        <li>
+                            <p class="section__text list__item">
+                                Открыть заборные отверстия поворотом рукоятки против часовой стрелки
+                            </p>
+                        </li>
+                        <li>
+                            <p class="section__text list__item">
+                                Несколько раз приподнять и опустить пробоотборник в насыпь для ускорения попадания в
+                                него зерна
+                            </p>
+                        </li>
+                        <li>
+                            <p class="section__text list__item">
+                                Закрыть заборные отверстия плавным поворотом рукоятки по часовой стрелке до упора
+                            </p>
+                        </li>
+                        <li>
+                            <p class="section__text list__item">
+                                Извлечь пробоотборник из насыпи. Затем пробоотборник необходимо медленно перевернуть
+                                рукояткой вниз, постепенно высыпая пробу через отверстие в торце рукоятки
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_column margin_top">
+                <span class="list__title">Технические данные</span>
+                <div class="details">
+                    <div class="details__row details__row_header">Модель</div>
+                    <div class="details__row details__row_header">Длина</div>
+                    <div class="details__row details__row_header">Глубина отбора пробы</div>
+                    <div class="details__row details__row_header">Диаметр</div>
+                    <div class="details__row details__row_header">Диаметр внутренней полости</div>
+                    <div class="details__row details__row_header">Кол. отверстий отбора</div>
+                    <div class="details__row details__row_w">PG361</div>
+                    <div class="details__row details__row_w">1.0 м</div>
+                    <div class="details__row details__row_w">0.80 м</div>
+                    <div class="details__row details__row_w">35 мм</div>
+                    <div class="details__row details__row_w">26 мм</div>
+                    <div class="details__row details__row_w">4 шт</div>
+                    <div class="details__row details__row_g">PG362</div>
+                    <div class="details__row details__row_g">1.4 м</div>
+                    <div class="details__row details__row_g">1.2 м</div>
+                    <div class="details__row details__row_g">35 мм</div>
+                    <div class="details__row details__row_g">26 мм</div>
+                    <div class="details__row details__row_g">6 шт</div>
+                    <div class="details__row details__row_w">PG363</div>
+                    <div class="details__row details__row_w">1.6 м</div>
+                    <div class="details__row details__row_w">1.4 м</div>
+                    <div class="details__row details__row_w">35 мм</div>
+                    <div class="details__row details__row_w">26 мм</div>
+                    <div class="details__row details__row_w">6 шт</div>
+                    <div class="details__row details__row_g">PG364</div>
+                    <div class="details__row details__row_g">2.0 м</div>
+                    <div class="details__row details__row_g">1.8 м</div>
+                    <div class="details__row details__row_g">35 мм</div>
+                    <div class="details__row details__row_g">26 мм</div>
+                    <div class="details__row details__row_g">9 шт</div>
+                    <div class="details__row details__row_w">PG365</div>
+                    <div class="details__row details__row_w">2.2 м</div>
+                    <div class="details__row details__row_w">2.0 м</div>
+                    <div class="details__row details__row_w">35 мм</div>
+                    <div class="details__row details__row_w">26 мм</div>
+                    <div class="details__row details__row_w">9 шт</div>
+                    <div class="details__row details__row_g">PG366</div>
+                    <div class="details__row details__row_g">3.0 м</div>
+                    <div class="details__row details__row_g">2.8 м</div>
+                    <div class="details__row details__row_g">35 мм</div>
+                    <div class="details__row details__row_g">26 мм</div>
+                    <div class="details__row details__row_g">12 шт</div>
+                </div>
+                <div class="section__subtext">*любые размеры под заказ</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="order" class="section order">
+    <div class="wrapper">
+        <div class="order__wrapper">
+            <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_row">
+                <div class="wrapper_column wrapper_col-3">
+                    <h2 class="section__title order__title">
+                        Сделать заказ
+                    </h2>
+                    <h3 class="section__subtitle order__subtitle">
+                        Работаем со всеми регионами России
+                    </h3>
+                    <p class="section__text order__text">
+                        Вы так же можете сделать заказ по электронной почте <span class="section__text_decor">admin@mail.com</span>
+                        или позвонить по телефону
+                        <span class="section__text_decor">+7 906 680 05 44</span>
+                    </p>
+                    <img data-aos="fade-up" data-aos-duration="1500"
+                         src="{{ url_for('static', filename='images/order.png') }}" alt="products"
+                         class="section__img order__img margin_top">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500"
+                     class="wrapper_column wrapper_col-3 margin_left margin_top">
+                    <form name="form" class="form">
+                        <div class="form__input-container">
+                            <label class="form__label" for="name">Ваше имя*</label>
+                            <input class="form__item" required placeholder="Ваше имя" name="name" type="text">
+                            <label class="form__label" for="phone">Ваш телефон*</label>
+                            <input class="form__item" required placeholder="Ваш телефон" name="phone" type="tel">
+                            <label class="form__label" for="email">Ваш e-mail</label>
+                            <input class="form__item" required placeholder="Ваш e-mail" name="email" type="email">
+                            <label class="form__label" for="model">Выберите модель*</label>
+                            <select class="form__item form__item_model" name="model">
+                                <option class="form__item" value="PG361">PG361</option>
+                                <option value="PG362">PG362</option>
+                                <option value="PG363">PG363</option>
+                                <option value="PG364">PG364</option>
+                                <option value="PG365">PG365</option>
+                            </select>
+                            <label class="form__label" for="count">Укажите количество*</label>
+                            <input class="form__item" required placeholder="1" name="count" type="text">
+                            <button class="btn order__btn margin_top" type="submit">заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section clients">
+    <div class="wrapper">
+        <div class="clients__wrapper">
+            <div data-aos="fade-up" data-aos-duration="1500" class="wrapper_column wrapper_col-4">
+                <h2 class="section__title clients__title">
+                    С кем мы сотрудничаем
+                </h2>
+                <h3 class="section__subtitle clients__subtitle">
+                    Продаем нашу продукцию напрямую клиентам, чтобы гарантировать справедливые цены и качество продукций
+                </h3>
+            </div>
+            <div class="wrapper_row clients__cards" data-aos="fade-up" data-aos-duration="1500">
+                <div class="wrapper_column card">
+                    <img src="{{ url_for('static', filename='images/agriculture.svg') }}" class="card__icon" alt="">
+                    <div class="card__title">Сельское хозяйство</div>
+                    <div class="card__descript">Фермеры - отправная точка. Они сажают урожай на земле. Они оптимизируют
+                        урожай и качество за счет полива, удобрения и борьбы с вредителями. В конечном итоге они
+                        собирают финальное качество
+                    </div>
+                </div>
+                <div class="wrapper_column card">
+                    <img src="{{ url_for('static', filename='images/trade.svg') }}" class="card__icon" alt="">
+                    <div class="card__title">Торговля зерном</div>
+                    <div class="card__descript">Дилеры собирают продукцию у фермеров, очищают и сортируют ее и создают
+                        единые партии на основе классификации качества. Затем они предлагают эти партии соседним
+                        предприятиям, например, заводам
+                    </div>
+                </div>
+                <div class="wrapper_column card">
+                    <img src="{{ url_for('static', filename='images/animals.svg') }}" class="card__icon" alt="">
+                    <div class="card__title">Производители кормов</div>
+                    <div class="card__descript">Они сотрудничают с животноводами и производят кормовые смеси, чтобы
+                        добиться улучшений в откорме коров, свиней и птицы
+                    </div>
+                </div>
+                <div class="wrapper_column card">
+                    <img src="{{ url_for('static', filename='images/grains.svg') }}" class="card__icon" alt="">
+                    <div class="card__title">Выращивание семян</div>
+                    <div class="card__descript">Для улучшения семян и выполнения требования рынка. Изменившиеся условия
+                        окружающей среды, такие как погода и климат, усиливают давление, заставляющее улучшать снабжение
+                        продовольствием растущее население Земли
+                    </div>
+                </div>
+                <div class="wrapper_column card">
+                    <img src="{{ url_for('static', filename='images/flour.svg') }}" class="card__icon" alt="">
+                    <div class="card__title">Пекарни</div>
+                    <div class="card__descript">Пекарни ищут высококачественное зерно, чтобы соответствовать требованиям
+                        пекарей. Качественное зерно важно для его измельчения с целью получения получения однородной
+                        муки
+                    </div>
+                </div>
+                <div class="wrapper_column card">
+                    <img src="{{ url_for('static', filename='images/beer.svg') }}" class="card__icon" alt="">
+                    <div class="card__title">Солодовни и пивоварни</div>
+                    <div class="card__descript">Пивоваренная промышленность также является важным потребителем зерна.
+                        Для стабильного качества пивоварням нужен качественный солод из солодовен, что требует
+                        оптимизации существующего качества зерна посредством технологического процесса
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="section contact">
+    <div class="wrapper">
+        <div data-aos="fade-up" data-aos-duration="1500" class="contact__wrapper">
+            <div class="wrapper_row">
+                <div class="wrapper_column wrapper_col-3">
+                    <h2 class="section__title contact__title">
+                        Контакты
+                    </h2>
+                    <h3 class="section__subtitle contact__subtitle">
+                        Связаться с нами
+                    </h3>
+                    <p class="section__text contact__text_color">
+                        Присылайте нам свои вопросы, предложения и пожелания
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper_row">
+                <div class="wrapper_column wrapper_col-3 margin_top">
+                    <form name="form" class="form">
+                        <div class="form__input-container">
+                            <textarea class="form__item form__item_message" required placeholder="Ваше сообщение"
+                                      name="message"></textarea>
+                            <input class="form__item" required placeholder="Ваше имя" name="name" type="text">
+                            <input class="form__item" required placeholder="Ваш e-mail" name="email" type="email">
+                            <input class="form__item" required placeholder="Ваш телефон" name="phone" type="tel">
+                            <button class="btn form__btn margin_top" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="wrapper_column wrapper_col-3 contact__info margin_top ">
+                    <div class="wrapper_column">
+                        <p class="section__text contact__text contact__text_color">
+                            <span class="section__text_big">Воронеж</span>
+                            <br>
+                            <br>Солнечная ул., 33
+                            <br>р-н Коминтерновский
+                        </p>
+                        <span class="section__text contact__text">
+                                 <a class="section__text link link_decor" href="https://goo.gl/maps/J35coSGfpc5WDPrq6">Показать на карте</a>
+                            </span>
+                        <p class="section__text contact__text wrapper_column">
+                            <a class="contact__text_color link link_email" href="mailto:admin@mail.ru">admin@mail.ru</a>
+                            <a class="contact__text_color link link_phone" href="tel:+79066800544">8 906 680 05 44</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

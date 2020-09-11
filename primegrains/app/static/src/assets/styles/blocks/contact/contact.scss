@@ -1,0 +1,34 @@
+.contact {
+    background-color: $color-lightBrown;
+    &__title {
+        color: $color-gold;
+    }
+    &__subtitle {
+        color: $color-lightGold;
+    }
+    &__text {
+        margin-bottom: 2rem;
+        @media screen and (max-width: 768px) {
+            margin-top: 2rem;
+        }
+        &_color {
+            color: $color-lightGold;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

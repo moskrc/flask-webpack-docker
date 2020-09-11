@@ -1,0 +1,75 @@
+.form {
+  margin: 0;
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    width: 100%;
+  }
+  &__item {
+    font-family: inherit;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 2px;
+    background-color: $color-lightGold;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
+    &_message {
+      height: 10rem;
+      @media screen and (max-width: 576px) {
+        height: 10rem
+      }
+    }
+  }
+  &__label {
+    font-family: inherit;
+    box-sizing: border-box;
+    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: $color-base;
+  }
+  &__btn {
+    color: $color-base;
+    background-color: #83796F;
+    border: 0;
+    transition: all .5s ease;
+    &:hover {
+      color: $color-lightGold;
+      transition: opacity .4s;
+    }
+  }
+}
+
+select {
+  background: url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #E5DCC3;
+  background-position-x: 97%;
+  appearance: none;
+  color: $color-lightBrown;
+}
+
+input, textarea, select, option {
+  outline: none;
+  &:focus {
+    outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+  &::placeholder {
+    font-family: inherit;
+    color: $color-lightBrown;
+    font-size: 1.25rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}

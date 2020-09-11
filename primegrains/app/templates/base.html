@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Пробоотборники для зерна">
+    <meta name="keywords"
+          content="пробоотборник,  купить пробооторник, пробоотборники, пробоотборник для зерна, пробоотборник ручной, пробоотборник в Воронеже, щуп пробоотборник">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <title>Пробоотборники для зерна></title>
+
+      {{ render_bundle('main') | safe }}
+</head>
+<body class="page">
+<nav class="navbar navbar_fixed-top">
+    <div class="wrapper">
+        <div class="navbar__wrapper">
+            <div class="wrapper_col">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='dist/images/logo.svg') }}" alt="logo" class="logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#about" class="link menu_link">
+                        Продукция
+                    </a>
+                </li>
+                <li>
+                    <a href="#order" class="link menu_link">
+                        Заказать
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="link menu_link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="wrapper_col">
+                <a class="link menu_link link_phone" href="tel:+79066800544"> 8(906)6800544</a>
+            </div>
+        </div>
+    </div>
+</nav>
+{% block content %}
+{% endblock %}
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__wrapper">
+            <div class="wrapper_col">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="logo" class="footer_logo">
+                </a>
+            </div>
+            <div class="wrapper_col">
+                <p class="copyright">&copy; 2020 Все права защены</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

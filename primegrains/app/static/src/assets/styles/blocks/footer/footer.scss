@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 9rem;
+    background-color: $color-darkBrown;
+    @media screen and (max-width: 1200px) {
+        padding: 3rem 4rem 2rem;
+    }
+    @media screen and (max-width: 992px) {
+        padding: 2rem 2rem 1.5rem;
+    }
+    @media screen and (max-width: 440px) {
+        padding: 1rem 1rem 1.5rem;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_logo {
+        width: 8rem;
+        @media screen and (max-width: 992px) {
+            width: 6.5rem;
+        }
+        @media screen and (max-width: 440px) {
+            width: 5rem;
+        }
+    }
+}
+.copyright {
+    margin: 0;
+    color: $color-lightGold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    @media screen and (max-width: 768px) {
+        font-size: 0.75rem;
+    }
+}
+
+
+

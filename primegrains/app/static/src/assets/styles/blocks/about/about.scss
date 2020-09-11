@@ -1,0 +1,9 @@
+.about {
+    background-color: $color-white;
+    &__title {
+        color: $color-gold;
+    }
+    &__subtitle {
+        color: $color-base;
+    }
+}

@@ -1,0 +1,26 @@
+@import "~normalize.css";
+@import "./vendor/fonts.scss";
+
+@import "components/color/color.scss";
+@import "./blocks/base/base.scss";
+@import "components/optional/optional.scss";
+
+@import "./blocks/navbar/navbar.scss";
+@import "blocks/header/header";
+@import "./blocks/about/about.scss";
+@import "./blocks/order/order.scss";
+@import "./blocks/clients/clients.scss";
+@import "./blocks/contact/contact.scss";
+@import "./blocks/footer/footer.scss";
+
+@import "components/button/button.scss";
+@import "components/link/link.scss";
+@import "components/logo/logo.scss";
+@import "components/table/table.scss";
+@import "components/form/form.scss";
+@import "components/list/list.scss";
+
+
+//* {
+//border: 1px solid black;
+//}

@@ -1,0 +1,97 @@
+.header {
+    background-image: url("/static/images/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    @media screen and (max-width: 992px) {
+        background-image: url("/static/images/main_992.jpg");
+    }
+    @media screen and (max-height: 400px) {
+        height: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 10rem 4rem;
+        @media screen and (max-width: 992px) {
+            padding: 8rem 2rem;
+        }
+        @media screen and (max-width: 768px) {
+            padding: 7rem 2rem;
+        }
+        @media screen and (max-width: 440px) {
+            padding: 5rem 1rem;
+        }
+    }
+    &__title {
+        color: $color-base;
+        font-style:  normal;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        font-size: 5.25rem;
+        line-height: 5.75rem;
+        letter-spacing: 0.2rem;
+        @media screen and (max-width: 1440px) {
+            font-size: 5rem;
+            line-height: 5.5rem;
+        }
+        @media screen and (max-width: 1200px) {
+            font-size: 4.5rem;
+            line-height: 5rem;
+        }
+        @media screen and (max-width: 992px) {
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 3.25rem;
+            line-height: 3.75rem;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 2.875rem;
+            line-height: 3.25rem;
+            letter-spacing: 0.01rem;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            letter-spacing: 0.02rem;
+        }
+    }
+    &__subtitle {
+        color: $color-base;
+        font-style:  normal;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-top: 2rem;
+        @media screen and (max-width: 992px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        @media screen and (max-width: 440px) {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+    &__btn {
+        color: $color-lightGold;
+        background-color: $color-base;
+        margin-top: 7rem;
+        transition: all .5s ease;
+        @media screen and (max-width: 768px) {
+            margin-top: 6rem;
+        }
+        @media screen and (max-width: 440px) {
+            margin-top: 4rem;
+        }
+        &:hover {
+            color: $color-gold;
+            transition: opacity .4s;
+        }
+    }
+}

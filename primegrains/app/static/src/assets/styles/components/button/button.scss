@@ -1,0 +1,27 @@
+.btn{
+    border-radius: 2px;
+    font-family: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    padding: 1.25rem 5rem ;
+    @media screen and (max-width: 1200px) {
+        font-size: 1.025rem;
+        padding: 1.25rem 5rem ;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        padding: 1rem 3.5rem ;
+    }
+}
+
+
+
+
+
+
+

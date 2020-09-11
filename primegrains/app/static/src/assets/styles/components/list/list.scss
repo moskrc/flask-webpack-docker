@@ -1,0 +1,41 @@
+ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  &::before {
+    position: absolute;
+    content: counter(my-awesome-counter);
+    counter-increment: num;
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    background-color: $color-lightGold;
+    color: $color-gold;
+    margin-right: 1rem;
+  }
+}
+
+
+.list{
+  &__title {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.08rem;
+    text-align: left;
+  }
+  &__item {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin: 1rem 3rem 4rem;
+  }
+}

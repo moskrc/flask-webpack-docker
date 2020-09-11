@@ -1,0 +1,134 @@
+body {
+  font-family: 'HelveticaNeueCyr';
+}
+
+.page {
+  box-sizing:border-box;
+}
+
+.section {
+  padding: 9rem 0rem;
+  @media screen and (max-width: 1200px) {
+    padding: 12rem 4rem 10rem;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 10rem 2rem 8rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 9rem 2rem 7rem;
+  }
+  @media screen and (max-width: 440px) {
+    padding: 6rem 1rem 5rem;
+  }
+  &__title {
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.07rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-style: normal;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.08rem;
+    @media screen and (max-width: 1200px) {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 2.125rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.08rem;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    &_decor {
+      font-weight: bold;
+    }
+    &_big {
+      text-transform: uppercase;
+    }
+  }
+  &__subtext {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+      transform: scale(1.1);
+      background-position: center;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  &_row {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &_column {
+    display: flex;
+    flex-direction: column;
+  }
+  &_col-3 {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  &_col-4 {
+    width: 66%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
