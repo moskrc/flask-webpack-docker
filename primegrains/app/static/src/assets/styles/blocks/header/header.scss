@@ -1,12 +1,12 @@
 .header {
-    background-image: url("/static/images/main.jpg");
+    background-image: url("/static/dist/images/main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     height: 100vh;
     @media screen and (max-width: 992px) {
-        background-image: url("/static/images/main_992.jpg");
+        background-image: url("/static/dist/images/main_992.jpg");
     }
     @media screen and (max-height: 400px) {
         height: 100%;

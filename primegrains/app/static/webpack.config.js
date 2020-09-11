@@ -3,6 +3,7 @@ const path = require("path");
 const webpack = require("webpack");
 const BundleTracker = require("webpack-bundle-tracker");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const resolve = path.resolve.bind(path, __dirname);
 
@@ -15,13 +16,13 @@ module.exports = (env, argv) => {
 	switch (argv.mode) {
 		case "production":
 			output = {
-				path: resolve("bundles/"),
+				path: resolve("dist/"),
 				filename: "[chunkhash]/[name].js",
 				chunkFilename: "[chunkhash]/[name].[id].js",
-				publicPath: "https://profitcar-vrn.ru/static/bundles/"
+				publicPath: "https://profitcar-vrn.ru/static/dist/"
 			};
 			bundleTrackerPlugin = new BundleTracker({
-				filename: "bundles/webpack-bundle.prod.json"
+				filename: "dist/webpack-bundle.prod.json"
 			});
 			extractCssPlugin = new MiniCssExtractPlugin({
 				filename: "[chunkhash]/[name].css",
@@ -32,13 +33,13 @@ module.exports = (env, argv) => {
 
 		case "development":
 			output = {
-				path: resolve("bundles/"),
+				path: resolve("dist/"),
 				filename: "dev/[name].js",
 				chunkFilename: "dev/[name].js",
-				publicPath: "http://127.0.0.1:8000/static/bundles/"
+				publicPath: "http://127.0.0.1:8000/static/dist/"
 			};
 			bundleTrackerPlugin = new BundleTracker({
-				filename: "bundles/webpack-bundle.dev.json"
+				filename: "dist/webpack-bundle.dev.json"
 			});
 			extractCssPlugin = new MiniCssExtractPlugin({
 				filename: "dev/[name].css",
@@ -54,16 +55,6 @@ module.exports = (env, argv) => {
 		mode: argv.mode,
 		entry: "./src/assets/js/index.js",
 		output,
-
-		// entry: {
-		// 	// bundleLibraries: './indexLibraries.js',
-		// 	main: './index.js',
-		// 	// bundleCss: './indexCss.js'
-		// },
-		// output: {
-		// 	filename: '[name].js'
-		// },
-
 		module: {
 			rules: [
 				// Scripts
@@ -118,9 +109,24 @@ module.exports = (env, argv) => {
 				jQuery: "jquery",
 				"window.jQuery": "jquery"
 			}),
-			new CopyWebpackPlugin([
-            	{from:'assets/img', to:'../dist/images'}
-        	]),
+			  new CopyWebpackPlugin({
+				  patterns: [
+					{
+					  from: 'src/assets/img',
+					  to: 'images',
+					}
+				  ]
+				}),
+			  new CopyWebpackPlugin({
+				  patterns: [
+					{
+					  from: 'src/assets/styles/vendor/fonts',
+					  to: 'fonts',
+					}
+				  ]
+				}),
+
+			new CleanWebpackPlugin(),
 		],
 		devtool: "source-map"
 	};
